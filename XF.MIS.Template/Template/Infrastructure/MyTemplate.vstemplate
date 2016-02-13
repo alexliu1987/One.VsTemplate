@@ -1,0 +1,63 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>$safeprojectname$.Infrastructure</Name>
+    <Description>&lt;没有可用的说明&gt;</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>$safeprojectname$.Infrastructure</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="$safeprojectname$.Infrastructure.csproj" File="Infrastructure.csproj" ReplaceParameters="true">
+      <Folder Name="AOP" TargetFolderName="AOP">
+        <ProjectItem ReplaceParameters="true" TargetFileName="LoggerCallHandler.cs">LoggerCallHandler.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Attribute" TargetFolderName="Attribute">
+        <ProjectItem ReplaceParameters="true" TargetFileName="LoggerAttribute.cs">LoggerAttribute.cs</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="CaptchaImage.cs">CaptchaImage.cs</ProjectItem>
+      <Folder Name="Const" TargetFolderName="Const">
+        <ProjectItem ReplaceParameters="true" TargetFileName="ActiveStatus.cs">ActiveStatus.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="FeedbackStatus.cs">FeedbackStatus.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="MessageStatus.cs">MessageStatus.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="PadStatus.cs">PadStatus.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="PwdInstructionType.cs">PwdInstructionType.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ServiceBus.cs">ServiceBus.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="StrategyType.cs">StrategyType.cs</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="DownLoadHelper.cs">DownLoadHelper.cs</ProjectItem>
+      <Folder Name="Enums" TargetFolderName="Enums">
+        <ProjectItem ReplaceParameters="true" TargetFileName="ApprovalStatus.cs">ApprovalStatus.cs</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="FileUp.cs">FileUp.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="HttpPostData.cs">HttpPostData.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Ioc.cs">Ioc.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="LogInstance.cs">LogInstance.cs</ProjectItem>
+      <Folder Name="Properties" TargetFolderName="Properties">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="ResponseDto.cs">ResponseDto.cs</ProjectItem>
+    </Project>
+  </TemplateContent>
+  <WizardExtension>
+    <Assembly>XF.MIS.TemplateWizard, Version=1.0.1.0, Culture=neutral, PublicKeyToken=859d04d9a8b9f7ce</Assembly>
+    <FullClassName>XF.MIS.TemplateWizard.ChildWizardImpl</FullClassName>
+  </WizardExtension>
+  <WizardExtension>
+    <Assembly>NuGet.VisualStudio.Interop, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Assembly>
+    <FullClassName>NuGet.VisualStudio.TemplateWizard</FullClassName>
+  </WizardExtension>
+  <WizardData>
+    <packages repository="extension"
+              repositoryId="XF.MIS.TemplateVSIX.AlexLiu.3b87324a-360a-420a-abf5-21c114c06d04">
+      <package id="Autofac" version="3.5.2" targetFramework="net45" />
+      <package id="log4net" version="1.2.10" targetFramework="net45" />
+    </packages>
+  </WizardData>
+</VSTemplate>

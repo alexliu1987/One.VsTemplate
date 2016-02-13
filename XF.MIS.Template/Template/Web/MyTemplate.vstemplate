@@ -1,0 +1,215 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>$safeprojectname$.Web</Name>
+    <Description>&lt;没有可用的说明&gt;</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>$safeprojectname$.Web</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="$safeprojectname$.Web.csproj" File="Web.csproj" ReplaceParameters="true">
+      <Folder Name="App_Code" TargetFolderName="App_Code">
+        <ProjectItem ReplaceParameters="true" TargetFileName="JQueryDataTableParamModel.cs">JQueryDataTableParamModel.cs</ProjectItem>
+      </Folder>
+      <Folder Name="App_Data" TargetFolderName="App_Data" />
+      <Folder Name="App_Start" TargetFolderName="App_Start">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AppSettingWatchConfig.cs">AppSettingWatchConfig.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="AutoMapperConfig.cs">AutoMapperConfig.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="BundleConfig.cs">BundleConfig.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="FilterConfig.cs">FilterConfig.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="IocConfig.cs">IocConfig.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="RouteConfig.cs">RouteConfig.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Startup.Auth.cs">Startup.Auth.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="WebApiConfig.cs">WebApiConfig.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Content" TargetFolderName="Content">
+        <ProjectItem ReplaceParameters="true" TargetFileName="bootstrap.min.css">bootstrap.min.css</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="style.css">style.css</ProjectItem>
+        <Folder Name="plugins" TargetFolderName="plugins">
+          <Folder Name="font-awesome" TargetFolderName="font-awesome">
+            <Folder Name="css" TargetFolderName="css">
+              <ProjectItem ReplaceParameters="true" TargetFileName="font-awesome.css">font-awesome.css</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="font-awesome.min.css">font-awesome.min.css</ProjectItem>
+            </Folder>
+            <Folder Name="fonts" TargetFolderName="fonts">
+              <ProjectItem ReplaceParameters="false" TargetFileName="fontawesome-webfont.eot">fontawesome-webfont.eot</ProjectItem>
+              <ProjectItem ReplaceParameters="false" TargetFileName="fontawesome-webfont.svg">fontawesome-webfont.svg</ProjectItem>
+              <ProjectItem ReplaceParameters="false" TargetFileName="fontawesome-webfont.ttf">fontawesome-webfont.ttf</ProjectItem>
+              <ProjectItem ReplaceParameters="false" TargetFileName="fontawesome-webfont.woff">fontawesome-webfont.woff</ProjectItem>
+              <ProjectItem ReplaceParameters="false" TargetFileName="fontawesome-webfont.woff2">fontawesome-webfont.woff2</ProjectItem>
+              <ProjectItem ReplaceParameters="false" TargetFileName="FontAwesome.otf">FontAwesome.otf</ProjectItem>
+            </Folder>
+            <Folder Name="less" TargetFolderName="less">
+              <ProjectItem ReplaceParameters="false" TargetFileName="animated.less">animated.less</ProjectItem>
+              <ProjectItem ReplaceParameters="false" TargetFileName="bordered-pulled.less">bordered-pulled.less</ProjectItem>
+              <ProjectItem ReplaceParameters="false" TargetFileName="core.less">core.less</ProjectItem>
+              <ProjectItem ReplaceParameters="false" TargetFileName="fixed-width.less">fixed-width.less</ProjectItem>
+              <ProjectItem ReplaceParameters="false" TargetFileName="font-awesome.less">font-awesome.less</ProjectItem>
+              <ProjectItem ReplaceParameters="false" TargetFileName="icons.less">icons.less</ProjectItem>
+              <ProjectItem ReplaceParameters="false" TargetFileName="larger.less">larger.less</ProjectItem>
+              <ProjectItem ReplaceParameters="false" TargetFileName="list.less">list.less</ProjectItem>
+              <ProjectItem ReplaceParameters="false" TargetFileName="mixins.less">mixins.less</ProjectItem>
+              <ProjectItem ReplaceParameters="false" TargetFileName="path.less">path.less</ProjectItem>
+              <ProjectItem ReplaceParameters="false" TargetFileName="rotated-flipped.less">rotated-flipped.less</ProjectItem>
+              <ProjectItem ReplaceParameters="false" TargetFileName="stacked.less">stacked.less</ProjectItem>
+              <ProjectItem ReplaceParameters="false" TargetFileName="variables.less">variables.less</ProjectItem>
+            </Folder>
+            <Folder Name="scss" TargetFolderName="scss">
+              <ProjectItem ReplaceParameters="false" TargetFileName="_animated.scss">_animated.scss</ProjectItem>
+              <ProjectItem ReplaceParameters="false" TargetFileName="_bordered-pulled.scss">_bordered-pulled.scss</ProjectItem>
+              <ProjectItem ReplaceParameters="false" TargetFileName="_core.scss">_core.scss</ProjectItem>
+              <ProjectItem ReplaceParameters="false" TargetFileName="_fixed-width.scss">_fixed-width.scss</ProjectItem>
+              <ProjectItem ReplaceParameters="false" TargetFileName="_icons.scss">_icons.scss</ProjectItem>
+              <ProjectItem ReplaceParameters="false" TargetFileName="_larger.scss">_larger.scss</ProjectItem>
+              <ProjectItem ReplaceParameters="false" TargetFileName="_list.scss">_list.scss</ProjectItem>
+              <ProjectItem ReplaceParameters="false" TargetFileName="_mixins.scss">_mixins.scss</ProjectItem>
+              <ProjectItem ReplaceParameters="false" TargetFileName="_path.scss">_path.scss</ProjectItem>
+              <ProjectItem ReplaceParameters="false" TargetFileName="_rotated-flipped.scss">_rotated-flipped.scss</ProjectItem>
+              <ProjectItem ReplaceParameters="false" TargetFileName="_stacked.scss">_stacked.scss</ProjectItem>
+              <ProjectItem ReplaceParameters="false" TargetFileName="_variables.scss">_variables.scss</ProjectItem>
+              <ProjectItem ReplaceParameters="false" TargetFileName="font-awesome.scss">font-awesome.scss</ProjectItem>
+            </Folder>
+          </Folder>
+        </Folder>
+        <Folder Name="Views" TargetFolderName="Views">
+          <Folder Name="Sample" TargetFolderName="Sample">
+            <ProjectItem ReplaceParameters="true" TargetFileName="List.css">List.css</ProjectItem>
+          </Folder>
+          <Folder Name="Shared" TargetFolderName="Shared">
+            <ProjectItem ReplaceParameters="true" TargetFileName="_Layout.css">_Layout.css</ProjectItem>
+          </Folder>
+        </Folder>
+      </Folder>
+      <Folder Name="Controllers" TargetFolderName="Controllers">
+        <Folder Name="BaseControllers" TargetFolderName="BaseControllers">
+          <ProjectItem ReplaceParameters="true" TargetFileName="BaseController.cs">BaseController.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="BaseViewModelController.cs">BaseViewModelController.cs</ProjectItem>
+        </Folder>
+        <ProjectItem ReplaceParameters="true" TargetFileName="SampleController.cs">SampleController.cs</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="false" TargetFileName="favicon.ico">favicon.ico</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Global.asax">Global.asax</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Global.asax.cs">Global.asax.cs</ProjectItem>
+      <Folder Name="Models" TargetFolderName="Models">
+        <ProjectItem ReplaceParameters="true" TargetFileName="SampleViewModel.cs">SampleViewModel.cs</ProjectItem>
+        <Folder Name="Validators" TargetFolderName="Validators">
+          <ProjectItem ReplaceParameters="true" TargetFileName="SampleViewModelValidator.cs">SampleViewModelValidator.cs</ProjectItem>
+        </Folder>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Project_Readme.html">Project_Readme.html</ProjectItem>
+      <Folder Name="Properties" TargetFolderName="Properties">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Scripts" TargetFolderName="Scripts">
+        <ProjectItem ReplaceParameters="true" TargetFileName="css.min.js">css.min.js</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="domReady.js">domReady.js</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="r.js">r.js</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="require.js">require.js</ProjectItem>
+        <Folder Name="Views" TargetFolderName="Views">
+          <ProjectItem ReplaceParameters="true" TargetFileName="common.js">common.js</ProjectItem>
+          <Folder Name="Sample" TargetFolderName="Sample">
+            <ProjectItem ReplaceParameters="true" TargetFileName="List.js">List.js</ProjectItem>
+          </Folder>
+          <Folder Name="Shared" TargetFolderName="Shared">
+            <ProjectItem ReplaceParameters="true" TargetFileName="_Layout.js">_Layout.js</ProjectItem>
+          </Folder>
+        </Folder>
+        <Folder Name="module" TargetFolderName="module">
+          <ProjectItem ReplaceParameters="true" TargetFileName="layer.js">layer.js</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="ngapp.js">ngapp.js</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="ngservice.js">ngservice.js</ProjectItem>
+        </Folder>
+        <Folder Name="config" TargetFolderName="config">
+        </Folder>
+      </Folder>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Setting.cfg">Setting.cfg</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Startup.cs">Startup.cs</ProjectItem>
+      <Folder Name="Views" TargetFolderName="Views">
+        <ProjectItem ReplaceParameters="true" TargetFileName="_ViewStart.cshtml">_ViewStart.cshtml</ProjectItem>
+        <Folder Name="Sample" TargetFolderName="Sample">
+          <ProjectItem ReplaceParameters="true" TargetFileName="List.cshtml">List.cshtml</ProjectItem>
+        </Folder>
+        <Folder Name="Shared" TargetFolderName="Shared">
+          <ProjectItem ReplaceParameters="true" TargetFileName="_Layout.cshtml">_Layout.cshtml</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="_LoginPartial.cshtml">_LoginPartial.cshtml</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="Error.cshtml">Error.cshtml</ProjectItem>
+        </Folder>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Web.config">Web.config</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Web.config">Web.config</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Web.Debug.config">Web.Debug.config</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Web.Release.config">Web.Release.config</ProjectItem>
+    </Project>
+  </TemplateContent>
+  <WizardExtension>
+    <Assembly>XF.MIS.TemplateWizard, Version=1.0.1.0, Culture=neutral, PublicKeyToken=859d04d9a8b9f7ce</Assembly>
+    <FullClassName>XF.MIS.TemplateWizard.ChildWizardImpl</FullClassName>
+  </WizardExtension>
+  <WizardExtension>
+    <Assembly>NuGet.VisualStudio.Interop, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Assembly>
+    <FullClassName>NuGet.VisualStudio.TemplateWizard</FullClassName>
+  </WizardExtension>
+  <WizardData>
+    <packages repository="extension"
+              repositoryId="XF.MIS.TemplateVSIX.AlexLiu.3b87324a-360a-420a-abf5-21c114c06d04">
+      <package id="Antlr" version="3.4.1.9004" targetFramework="net45" />
+      <package id="Autofac" version="3.5.2" targetFramework="net45" />
+      <package id="Autofac.Mvc5" version="3.3.4" targetFramework="net45" />
+      <package id="Autofac.WebApi2" version="3.4.0" targetFramework="net45" />
+      <package id="AutoMapper" version="3.3.1" targetFramework="net45" />
+      <package id="ConfigCenter.Provider" version="1.0.0" />
+      <package id="DapperExtensions" version="1.4.4" targetFramework="net45" />
+      <package id="EntityFramework" version="6.0.0" targetFramework="net45" />
+      <package id="EntityFramework.zh-Hans" version="6.0.0" targetFramework="net45" />
+      <package id="FluentValidation" version="5.6.2.0" targetFramework="net45" />
+      <package id="FluentValidation.MVC5" version="5.6.2.0" targetFramework="net45" />
+      <package id="log4net" version="1.2.10" targetFramework="net45" />
+      <package id="Microsoft.AspNet.Identity.Core" version="1.0.0" targetFramework="net45" />
+      <package id="Microsoft.AspNet.Identity.Core.zh-Hans" version="1.0.0" targetFramework="net45" />
+      <package id="Microsoft.AspNet.Identity.EntityFramework" version="1.0.0" targetFramework="net45" />
+      <package id="Microsoft.AspNet.Identity.EntityFramework.zh-Hans" version="1.0.0" targetFramework="net45" />
+      <package id="Microsoft.AspNet.Identity.Owin" version="1.0.0" targetFramework="net45" />
+      <package id="Microsoft.AspNet.Identity.Owin.zh-Hans" version="1.0.0" targetFramework="net45" />
+      <package id="Microsoft.AspNet.Mvc" version="5.2.3" targetFramework="net45" />
+      <package id="Microsoft.AspNet.Mvc.zh-Hans" version="5.2.3" targetFramework="net45" />
+      <package id="Microsoft.AspNet.Razor" version="3.2.3" targetFramework="net45" />
+      <package id="Microsoft.AspNet.Razor.zh-Hans" version="3.2.3" targetFramework="net45" />
+      <package id="Microsoft.AspNet.Web.Optimization" version="1.1.1" targetFramework="net45" />
+      <package id="Microsoft.AspNet.Web.Optimization.zh-Hans" version="1.1.1" targetFramework="net45" />
+      <package id="Microsoft.AspNet.WebApi" version="5.2.3" targetFramework="net45" />
+      <package id="Microsoft.AspNet.WebApi.Client" version="5.2.3" targetFramework="net45" />
+      <package id="Microsoft.AspNet.WebApi.Core" version="5.2.3" targetFramework="net45" />
+      <package id="Microsoft.AspNet.WebApi.WebHost" version="5.2.3" targetFramework="net45" />
+      <package id="Microsoft.AspNet.WebPages" version="3.2.3" targetFramework="net45" />
+      <package id="Microsoft.AspNet.WebPages.zh-Hans" version="3.2.3" targetFramework="net45" />
+      <package id="Microsoft.Owin" version="2.0.0" targetFramework="net45" />
+      <package id="Microsoft.Owin.Host.SystemWeb" version="2.0.0" targetFramework="net45" />
+      <package id="Microsoft.Owin.Host.SystemWeb.zh-Hans" version="2.0.0" targetFramework="net45" />
+      <package id="Microsoft.Owin.Security" version="2.0.0" targetFramework="net45" />
+      <package id="Microsoft.Owin.Security.Cookies" version="2.0.0" targetFramework="net45" />
+      <package id="Microsoft.Owin.Security.Facebook" version="2.0.0" targetFramework="net45" />
+      <package id="Microsoft.Owin.Security.Facebook.zh-Hans" version="2.0.0" targetFramework="net45" />
+      <package id="Microsoft.Owin.Security.Google" version="2.0.0" targetFramework="net45" />
+      <package id="Microsoft.Owin.Security.Google.zh-Hans" version="2.0.0" targetFramework="net45" />
+      <package id="Microsoft.Owin.Security.MicrosoftAccount" version="2.0.0" targetFramework="net45" />
+      <package id="Microsoft.Owin.Security.MicrosoftAccount.zh-Hans" version="2.0.0" targetFramework="net45" />
+      <package id="Microsoft.Owin.Security.OAuth" version="2.0.0" targetFramework="net45" />
+      <package id="Microsoft.Owin.Security.Twitter" version="2.0.0" targetFramework="net45" />
+      <package id="Microsoft.Owin.Security.Twitter.zh-Hans" version="2.0.0" targetFramework="net45" />
+      <package id="Microsoft.Owin.Security.zh-Hans" version="2.0.0" targetFramework="net45" />
+      <package id="Microsoft.Owin.zh-Hans" version="2.0.0" targetFramework="net45" />
+      <package id="Microsoft.Web.Infrastructure" version="1.0.0.0" targetFramework="net45" />
+      <package id="Newtonsoft.Json" version="7.0.1" targetFramework="net45" />
+      <package id="Owin" version="1.0" targetFramework="net45" />
+      <package id="WebGrease" version="1.5.2" targetFramework="net45" />
+      <package id="ZooKeeper.Net" version="3.4.6.2" targetFramework="net45" />
+    </packages>
+  </WizardData>
+</VSTemplate>

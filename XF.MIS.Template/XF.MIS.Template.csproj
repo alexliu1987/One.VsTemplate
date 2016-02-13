@@ -1,0 +1,296 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>12.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>发布\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectTypeGuids>{82b43b9b-a64c-4715-b499-d71e9ca2bd60};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{A31C0CDB-573D-477A-A9A4-BF9B91AE44EF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>XF.MIS.Template</RootNamespace>
+    <AssemblyName>XF.MIS.Template</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <GeneratePkgDefFile>false</GeneratePkgDefFile>
+    <IncludeAssemblyInVSIXContainer>false</IncludeAssemblyInVSIXContainer>
+    <IncludeDebugSymbolsInVSIXContainer>false</IncludeDebugSymbolsInVSIXContainer>
+    <IncludeDebugSymbolsInLocalVSIXDeployment>false</IncludeDebugSymbolsInLocalVSIXDeployment>
+    <CreateVsixContainer>false</CreateVsixContainer>
+    <DeployExtension>false</DeployExtension>
+    <DeployVSTemplates>false</DeployVSTemplates>
+    <CopyVsixManifestToOutput>false</CopyVsixManifestToOutput>
+    <CopyBuildOutputToOutputDirectory>false</CopyBuildOutputToOutputDirectory>
+    <CopyOutputSymbolsToOutputDirectory>false</CopyOutputSymbolsToOutputDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualStudio.CoreUtility">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="Template\Web\App_Start\WebApiConfig.cs" />
+    <None Include="Template\Web\App_Code\JQueryDataTableParamModel.cs" />
+    <None Include="Template\Web\App_Start\AppSettingWatchConfig.cs" />
+    <None Include="Template\Web\App_Start\AutoMapperConfig.cs" />
+    <None Include="Template\Web\App_Start\BundleConfig.cs" />
+    <None Include="Template\Web\App_Start\FilterConfig.cs" />
+    <None Include="Template\Web\App_Start\IocConfig.cs" />
+    <None Include="Template\Web\App_Start\RouteConfig.cs" />
+    <None Include="Template\Web\App_Start\Startup.Auth.cs" />
+    <None Include="Template\Web\Controllers\BaseControllers\BaseController.cs" />
+    <None Include="Template\Web\Controllers\BaseControllers\BaseViewModelController.cs" />
+    <None Include="Template\Web\Controllers\SampleController.cs" />
+    <None Include="Template\Web\Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </None>
+    <None Include="Template\Web\Models\SampleViewModel.cs" />
+    <None Include="Template\Web\Models\Validators\SampleViewModelValidator.cs" />
+    <None Include="Template\Web\Properties\AssemblyInfo.cs" />
+    <None Include="Template\Web\Startup.cs" />
+    <None Include="Template\Api\App_Start\NancyBootstrapper.cs" />
+    <None Include="Template\Api\BaseModule.cs" />
+    <None Include="Template\Api\Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </None>
+    <None Include="Template\Api\Modules\SampleModule.cs" />
+    <None Include="Template\Api\Properties\AssemblyInfo.cs" />
+    <None Include="Template\Application\Properties\AssemblyInfo.cs" />
+    <None Include="Template\Application\Service.cs" />
+    <None Include="Template\Api\packages.config" />
+    <None Include="Template\Api\Web.config" />
+    <None Include="Template\Api\Web.Debug.config" />
+    <None Include="Template\Api\Web.Release.config" />
+    <None Include="Template\Application\app.config" />
+    <None Include="Template\Application\packages.config" />
+    <None Include="Template\IApplication\IService.cs" />
+    <None Include="Template\IApplication\Properties\AssemblyInfo.cs" />
+    <None Include="Template\RepositoriesTest\BaseTest.cs" />
+    <None Include="Template\RepositoriesTest\Properties\AssemblyInfo.cs" />
+    <None Include="Template\RepositoriesTest\App.config" />
+    <None Include="Template\RepositoriesTest\packages.config" />
+    <None Include="Template\Repositories\Properties\AssemblyInfo.cs" />
+    <None Include="Template\Domain\Entity\SampleModel.cs" />
+    <None Include="Template\Domain\Mapper\SampleModelMapper.cs" />
+    <None Include="Template\Domain\Properties\AssemblyInfo.cs" />
+    <None Include="Template\Domain\Repositories\EntityBase.cs" />
+    <None Include="Template\Domain\Repositories\IReadOnlyRepository.cs" />
+    <None Include="Template\Domain\Repositories\IRepository.cs" />
+    <None Include="Template\Domain\Repositories\Repository.cs" />
+    <None Include="Template\Domain\Repositories\Specifications\Pages.cs" />
+    <None Include="Template\Domain\Repositories\Specifications\StoredProcedureParam.cs" />
+    <None Include="Template\Domain\packages.config" />
+    <None Include="Template\Infrastructure\AOP\LoggerCallHandler.cs" />
+    <None Include="Template\Infrastructure\Attribute\LoggerAttribute.cs" />
+    <None Include="Template\Infrastructure\CaptchaImage.cs" />
+    <None Include="Template\Infrastructure\Const\ActiveStatus.cs" />
+    <None Include="Template\Infrastructure\Const\FeedbackStatus.cs" />
+    <None Include="Template\Infrastructure\Const\MessageStatus.cs" />
+    <None Include="Template\Infrastructure\Const\PadStatus.cs" />
+    <None Include="Template\Infrastructure\Const\PwdInstructionType.cs" />
+    <None Include="Template\Infrastructure\Const\ServiceBus.cs" />
+    <None Include="Template\Infrastructure\Const\StrategyType.cs" />
+    <None Include="Template\Infrastructure\DownLoadHelper.cs" />
+    <None Include="Template\Infrastructure\Enums\ApprovalStatus.cs" />
+    <None Include="Template\Infrastructure\FileUp.cs" />
+    <None Include="Template\Infrastructure\HttpPostData.cs" />
+    <None Include="Template\Infrastructure\Ioc.cs" />
+    <None Include="Template\Infrastructure\LogInstance.cs" />
+    <None Include="Template\Infrastructure\Properties\AssemblyInfo.cs" />
+    <None Include="Template\Infrastructure\ResponseDto.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Template\Infrastructure\packages.config" />
+    <None Include="Template\Repositories\packages.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Template\Web\Content\plugins\font-awesome\fonts\fontawesome-webfont.eot" />
+    <None Include="Template\Web\Content\plugins\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <None Include="Template\Web\Content\plugins\font-awesome\fonts\fontawesome-webfont.woff" />
+    <None Include="Template\Web\Content\plugins\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <None Include="Template\Web\Content\plugins\font-awesome\fonts\FontAwesome.otf" />
+    <None Include="Template\Web\Content\plugins\font-awesome\less\animated.less" />
+    <None Include="Template\Web\Content\plugins\font-awesome\less\bordered-pulled.less" />
+    <None Include="Template\Web\Content\plugins\font-awesome\less\core.less" />
+    <None Include="Template\Web\Content\plugins\font-awesome\less\fixed-width.less" />
+    <None Include="Template\Web\Content\plugins\font-awesome\less\font-awesome.less" />
+    <None Include="Template\Web\Content\plugins\font-awesome\less\icons.less" />
+    <None Include="Template\Web\Content\plugins\font-awesome\less\larger.less" />
+    <None Include="Template\Web\Content\plugins\font-awesome\less\list.less" />
+    <None Include="Template\Web\Content\plugins\font-awesome\less\mixins.less" />
+    <None Include="Template\Web\Content\plugins\font-awesome\less\path.less" />
+    <None Include="Template\Web\Content\plugins\font-awesome\less\rotated-flipped.less" />
+    <None Include="Template\Web\Content\plugins\font-awesome\less\stacked.less" />
+    <None Include="Template\Web\Content\plugins\font-awesome\less\variables.less" />
+    <None Include="Template\Web\Content\plugins\font-awesome\scss\font-awesome.scss" />
+    <None Include="Template\Web\Content\plugins\font-awesome\scss\_animated.scss" />
+    <None Include="Template\Web\Content\plugins\font-awesome\scss\_bordered-pulled.scss" />
+    <None Include="Template\Web\Content\plugins\font-awesome\scss\_core.scss" />
+    <None Include="Template\Web\Content\plugins\font-awesome\scss\_fixed-width.scss" />
+    <None Include="Template\Web\Content\plugins\font-awesome\scss\_icons.scss" />
+    <None Include="Template\Web\Content\plugins\font-awesome\scss\_larger.scss" />
+    <None Include="Template\Web\Content\plugins\font-awesome\scss\_list.scss" />
+    <None Include="Template\Web\Content\plugins\font-awesome\scss\_mixins.scss" />
+    <None Include="Template\Web\Content\plugins\font-awesome\scss\_path.scss" />
+    <None Include="Template\Web\Content\plugins\font-awesome\scss\_rotated-flipped.scss" />
+    <None Include="Template\Web\Content\plugins\font-awesome\scss\_stacked.scss" />
+    <None Include="Template\Web\Content\plugins\font-awesome\scss\_variables.scss" />
+    <None Include="Template\Web\packages.config" />
+    <None Include="Template\Web\Setting.cfg" />
+    <None Include="Template\Web\Views\Sample\List.cshtml" />
+    <None Include="Template\Web\Views\Shared\Error.cshtml" />
+    <None Include="Template\Web\Views\Shared\_Layout.cshtml" />
+    <None Include="Template\Web\Views\Shared\_LoginPartial.cshtml" />
+    <None Include="Template\Web\Views\Web.config" />
+    <None Include="Template\Web\Views\_ViewStart.cshtml" />
+    <None Include="Template\Web\Web.config" />
+    <None Include="Template\Web\Web.Debug.config" />
+    <None Include="Template\Web\Web.Release.config" />
+    <None Include="XF.MIS.Template.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <VSTemplate Include="XF.MIS.Template.vstemplate">
+      <SubType>Designer</SubType>
+    </VSTemplate>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\XF.MIS.TemplateWizard\XF.MIS.TemplateWizard.csproj">
+      <Project>{30de1b0d-413c-4b59-b6ad-76af23ed82cb}</Project>
+      <Name>XF.MIS.TemplateWizard</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Template\Api\Global.asax" />
+    <Content Include="Template\Api\Api.csproj" />
+    <Content Include="Template\Api\MyTemplate.vstemplate" />
+    <Content Include="Template\Api\__TemplateIcon.ico" />
+    <Content Include="Template\Application\Application.csproj" />
+    <Content Include="Template\Application\MyTemplate.vstemplate" />
+    <Content Include="Template\Application\__TemplateIcon.ico" />
+    <Content Include="Template\Domain\Domain.csproj" />
+    <Content Include="Template\Domain\MyTemplate.vstemplate">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Template\Domain\__TemplateIcon.ico" />
+    <Content Include="Template\IApplication\IApplication.csproj" />
+    <Content Include="Template\IApplication\MyTemplate.vstemplate" />
+    <Content Include="Template\IApplication\__TemplateIcon.ico" />
+    <Content Include="Template\Infrastructure\Infrastructure.csproj">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Template\Infrastructure\MyTemplate.vstemplate" />
+    <Content Include="Template\Infrastructure\__TemplateIcon.ico" />
+    <Content Include="Template\RepositoriesTest\Repositories.Test.csproj" />
+    <Content Include="Template\RepositoriesTest\MyTemplate.vstemplate" />
+    <Content Include="Template\RepositoriesTest\__TemplateIcon.ico" />
+    <Content Include="Template\Repositories\Repositories.csproj" />
+    <Content Include="Template\Repositories\MyTemplate.vstemplate" />
+    <Content Include="Template\Repositories\__TemplateIcon.ico" />
+    <Content Include="Template\Web\Content\bootstrap.min.css" />
+    <Content Include="Template\Web\Content\plugins\font-awesome\css\font-awesome.css" />
+    <Content Include="Template\Web\Content\plugins\font-awesome\css\font-awesome.min.css" />
+    <Content Include="Template\Web\Content\plugins\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="Template\Web\Content\style.css" />
+    <Content Include="Template\Web\Content\Views\Sample\List.css" />
+    <Content Include="Template\Web\Content\Views\Shared\_Layout.css" />
+    <Content Include="Template\Web\favicon.ico" />
+    <Content Include="Template\Web\Global.asax" />
+    <Content Include="Template\Web\Scripts\domReady.js" />
+    <Content Include="Template\Web\Scripts\module\layer.js" />
+    <Content Include="Template\Web\Scripts\module\ngapp.js" />
+    <Content Include="Template\Web\Scripts\module\ngservice.js" />
+    <Content Include="Template\Web\Web.csproj">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Template\Web\MyTemplate.vstemplate">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Template\Web\Project_Readme.html" />
+    <Content Include="Template\Web\Scripts\css.min.js" />
+    <Content Include="Template\Web\Scripts\r.js" />
+    <Content Include="Template\Web\Scripts\require.js" />
+    <Content Include="Template\Web\Scripts\Views\common.js" />
+    <Content Include="Template\Web\Scripts\Views\Sample\List.js" />
+    <Content Include="Template\Web\Scripts\Views\Shared\_Layout.js" />
+    <Content Include="Template\Web\__TemplateIcon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Template\Domain\Dto\" />
+    <Folder Include="Template\Domain\Entity\View\" />
+    <Folder Include="Template\Domain\Repositories\IRepository\" />
+    <Folder Include="Template\Web\Scripts\config\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\VSSDK\Microsoft.VsSDK.targets" Condition="'$(VSToolsPath)' != ''" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="ProjectGroup" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <Name>XF.MIS.Template</Name>
+    <Description>XF.MIS.Template</Description>
+    <Icon>XF.MIS.Template.ico</Icon>
+    <ProjectType>CSharp</ProjectType>
+    <RequiredFrameworkVersion>4.0</RequiredFrameworkVersion>
+    <SortOrder>1000</SortOrder>
+    <TemplateID>9cf126d8-251a-4bc9-90b8-96717615d6de</TemplateID>
+    <DefaultName>XF.MIS.Template</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+  </TemplateData>
+  <TemplateContent>
+    <ProjectCollection>
+      <SolutionFolder Name="1-UI">
+        <ProjectTemplateLink ProjectName="$safeprojectname$.Api">
+          Template\Api\MyTemplate.vstemplate
+        </ProjectTemplateLink>
+        <ProjectTemplateLink ProjectName="$safeprojectname$.Web">
+          Template\Web\MyTemplate.vstemplate
+        </ProjectTemplateLink>
+      </SolutionFolder>
+      <SolutionFolder Name="2-Application">
+        <ProjectTemplateLink ProjectName="$safeprojectname$.Application">
+          Template\Application\MyTemplate.vstemplate
+        </ProjectTemplateLink>
+        <ProjectTemplateLink ProjectName="$safeprojectname$.IApplication">
+          Template\IApplication\MyTemplate.vstemplate
+        </ProjectTemplateLink>
+      </SolutionFolder>
+      <SolutionFolder Name="3-Repositories">
+        <ProjectTemplateLink ProjectName="$safeprojectname$.Repositories">
+          Template\Repositories\MyTemplate.vstemplate
+        </ProjectTemplateLink>
+        <ProjectTemplateLink ProjectName="$safeprojectname$.Repositories.Test">
+          Template\RepositoriesTest\MyTemplate.vstemplate
+        </ProjectTemplateLink>
+      </SolutionFolder>
+      <SolutionFolder Name="4-Domain">
+        <ProjectTemplateLink ProjectName="$safeprojectname$.Domain">
+          Template\Domain\MyTemplate.vstemplate
+        </ProjectTemplateLink>
+      </SolutionFolder>
+      <SolutionFolder Name="5-Infrastructure">
+        <ProjectTemplateLink ProjectName="$safeprojectname$.Infrastructure">
+          Template\Infrastructure\MyTemplate.vstemplate
+        </ProjectTemplateLink>
+      </SolutionFolder>
+    </ProjectCollection>
+  </TemplateContent>
+  <WizardExtension>
+    <Assembly>XF.MIS.TemplateWizard, Version=1.0.1.0, Culture=neutral, PublicKeyToken=859d04d9a8b9f7ce</Assembly>
+    <FullClassName>XF.MIS.TemplateWizard.RootWizardImpl</FullClassName>
+  </WizardExtension>
+</VSTemplate>
